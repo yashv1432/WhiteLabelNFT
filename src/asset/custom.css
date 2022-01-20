@@ -1,0 +1,194 @@
+.Collections__container {
+    margin-top: 50px;
+    width: 326px;
+    height: 350px;
+    margin-left: 128px;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    border-radius: 13px;
+    justify-content: center;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .rounded-circle {
+    width: 100%;
+    height: 300px;
+    transform: scale(0.5);
+  }
+  
+  #create_logo {
+    width: 39px;
+    height: 42px;
+    margin-left: 22px;
+    margin-top: 10px;
+  }
+  
+
+  @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@600&family=Atkinson+Hyperlegible&family=Fugaz+One&family=Lato&family=Montserrat:wght@500&family=Poppins:wght@200;500&family=Shadows+Into+Light&family=Shippori+Antique&family=Varela+Round&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.card {
+    cursor: pointer;
+  }
+  
+  .card-group {
+    width: 60%;
+  }
+
+  
+
+  * {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .form-control {
+    width: 500px;
+  }
+  
+  .bi {
+    border: 1px solid white;
+  }
+  
+  .contains_option {
+    margin-right: 60px;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@600&family=Atkinson+Hyperlegible&family=Fugaz+One&family=Lato&family=Montserrat:wght@500&family=Poppins:wght@500&family=Shadows+Into+Light&family=Shippori+Antique&family=Varela+Round&display=swap");
+
+.container__tile {
+  margin-top: 40px;
+  background-color: #f8f8f8;
+  height: 248px;
+  width: 318px;
+  border-radius: 13px;
+  margin-left: 60px;
+}
+
+.container__up {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.container__down {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Assistant", sans-serif;
+}
+
+.value {
+  border: 2px solid green;
+  border-radius: 0.5em;
+  padding: 0px 5px 0px 5px;
+  font-size: 14px;
+  color: green;
+}
+
+.title {
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.value__high {
+  font-size: 14px;
+}
+
+.value__k {
+  font-size: 14px;
+}
+
+span {
+  color: #37f;
+}
+
+#nft__photo {
+  height: 190px;
+  cursor: pointer;
+  border-top-left-radius: 0.6em;
+  border-top-right-radius: 0.6em;
+}
+
+@media (min-width: 992px) {
+  .col-lg-3 {
+    flex: 0 0 auto;
+    width: 24%;
+  }
+}
+
+#like_icon {
+  position: absolute;
+  margin-top: -170px;
+  margin-left: 120px;
+}
+
+
+
+.Leader_Board_container {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+
+  @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@600&family=Atkinson+Hyperlegible&family=Fugaz+One&family=Lato&family=Montserrat:wght@500&family=Poppins:wght@500&family=Shadows+Into+Light&family=Shippori+Antique&family=Varela+Round&display=swap");
+
+.upper__heading {
+  font-family: "Assistant", sans-serif;
+  display: flex;
+  font-size: 25px;
+  margin-top: 50px;
+  font-weight: bolder;
+}
+
+.upper__home {
+  display: flex;
+  flex-direction: column;
+}
+
+.lower__homepage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#filters {
+  display: flex;
+  flex-direction: row;
+}
+
+#dropdownMenuButton2 {
+  margin-left: 150px;
+}
+
+#dropdownMenuButton3 {
+  margin-right: 100px;
+}
+
+.middle__homepage {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.middle__heading {
+  font-family: "Assistant", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 18.4px;
+  color: black;
+  text-decoration: none;
+}
