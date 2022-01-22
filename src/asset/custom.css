@@ -186,6 +186,20 @@ span {
   color: black;
   text-decoration: none;
 }
+/* ---------------Font style css------------- */
+.font-12 {
+  font-size: 12px;
+}
+.font-13 {
+  font-size: 13px;
+}
+.font-14 {
+  font-size: 14px;
+}
+.font-15 {
+  font-size: 15px;
+}
+/* --------------Font style css---------------- */
 
 /* ------------Suggestions form css------------ */
 .suggestion-form {
@@ -213,3 +227,34 @@ span {
 .accordion-border {
   border-radius: 5px !important;
 }
+/*-------------- Buying css end------------------ */
+
+/*-------------- CreateNFT css ------------------ */
+.create-nft-font {
+  font-weight: 1000;
+}
+.bottom-heading-font {
+  font-weight: 550;
+}
+.card-height {
+  height: 110%;
+}
+/*-------------- CreateNFT css ------------------ */
+
+/*-------------- Single CreateNFT css ------------------ */
+.single-nft-card {
+  height: 60%;
+  width: 270px;
+}
+/*-------------- Single CreateNFT css end------------------ */
+
+/*-------------- Collection CreateNFT css end------------------ */
+.banner-nft-card {
+  height: 60%;
+  width: 300px;
+}
+.collection-nft-card {
+  height: 100px !important;
+  width: 200px !important;
+}
+/*-------------- Collection CreateNFT css end------------------ */

@@ -100,7 +100,7 @@ function Navbar() {
               </li>
 
               <li>
-                <Link to="/create">
+                <Link to="/CreateNFT">
                   <button
                     type="button"
                     className="btn btn-primary"

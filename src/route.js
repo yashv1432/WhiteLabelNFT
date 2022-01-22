@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./component/Navbar";
 import Nft_tile from "./component/Nft_tile";
@@ -16,6 +15,9 @@ import Collection_homepage from "./component/Collection_homepage";
 import HelpCenter from "./component/HelpCenter";
 import Suggestion from "./component/Suggestion";
 import Buying from "./component/Buying";
+import CreateNFT from "./component/CreateNFT";
+import CreateSingleNFT from "./component/CreateSingleNFT";
+import CreateNFT_collection from "./component/CreateNFT_collection";
 
 function App() {
   return (
@@ -38,6 +40,17 @@ function App() {
             <Route exact path="/LeaderBoard" element={<LeaderBoard />} />
             <Route exact path="/Buying" element={<Buying />} />
             <Route exact path="/create" element={<Create />} />
+            <Route exact path="/CreateNFT" element={<CreateNFT />} />
+            <Route
+              exact
+              path="/CreateSingleNFT"
+              element={<CreateSingleNFT />}
+            />
+            <Route
+              exact
+              path="/CreateNFT_collection"
+              element={<CreateNFT_collection />}
+            />
           </Routes>
         </switch>
       </Router>
