@@ -27,6 +27,14 @@ ul {
   margin-top: 10px;
 }
 
+
+#create_logo {
+  width: 39px;
+  height: 42px;
+  margin-left: 22px;
+  margin-top: 10px;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@600&family=Atkinson+Hyperlegible&family=Fugaz+One&family=Lato&family=Montserrat:wght@500&family=Poppins:wght@200;500&family=Shadows+Into+Light&family=Shippori+Antique&family=Varela+Round&display=swap");
 * {
   font-family: "Poppins", sans-serif;
@@ -234,8 +242,12 @@ span {
   font-weight: 1000;
 }
 .bottom-heading-font {
+<<<<<<< HEAD
   font-weight: 600;
   font-size: 16px;
+=======
+  font-weight: 550;
+>>>>>>> 913be4b332d953390b569e47ea72d76177396caf
 }
 .card-height {
   height: 110%;
@@ -247,6 +259,7 @@ span {
   height: 60%;
   width: 270px;
 }
+<<<<<<< HEAD
 .input-heading {
   font-size: 15px;
   font-weight: 600;
@@ -280,5 +293,17 @@ input::-webkit-input-placeholder {
 }
 .top-heading {
   margin-left: 2em !important;
+=======
+/*-------------- Single CreateNFT css end------------------ */
+
+/*-------------- Collection CreateNFT css end------------------ */
+.banner-nft-card {
+  height: 60%;
+  width: 300px;
+}
+.collection-nft-card {
+  height: 100px !important;
+  width: 200px !important;
+>>>>>>> 913be4b332d953390b569e47ea72d76177396caf
 }
 /*-------------- Collection CreateNFT css end------------------ */
