@@ -249,6 +249,7 @@ function LeaderBoard() {
       </div>
       <div  class="row mx-0 text-center">
         {/* <div className="col-md-3 col-lg-3 col-sm-6 col-11 images"> */}
+        {/* Commited code */}
           {LeaderBoardApi2.map((curElem) => {
             const { image, title, price, maxPrice, maxPrice2, daysLeft } =
               curElem;
