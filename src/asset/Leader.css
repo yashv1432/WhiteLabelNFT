@@ -106,7 +106,30 @@ margin: 0rem;
           display: flex;
           align-items: center;
       }
-      .hey
+      /* .hey
       {
           background-color: grey;
+      } */
+      table {
+        border-collapse: separate;
+      }
+    .table1 > td {
+        /* display: inline-block; */
+        margin: 0rem;
+        border-bottom: 2rem solid white;
+        border-top: 0rem solid white;
+        height: 1rem;
+        padding: 0px;
+        background-color: "#f8f8f8";
+      }
+      .table1 > th {
+        /* display: inline-block; */
+        margin-bottom: 2rem;
+        border-bottom: 2rem solid white;
+        height: 1rem;
+        padding: 0px;
+      }
+      tbody, thead
+      {
+          border-style: none !important;
       }

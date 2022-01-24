@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 // import './Top_collection.css'
 import {LeaderBoardApi3 } from "../API/LeaderBoardApi";
+import "../asset/Leader.css";
 
 export class Top_collection extends Component {
     render() {
@@ -28,25 +29,25 @@ export class Top_collection extends Component {
                 <table className="table table" style={{ marginTop: "35px", width: "100%" }}>
                     <thead>
                         <tr>
-                            <th scope="col" style={{ textAlign: "left", fontSize: "20px" }}>Name</th>
+                            <th scope="col" style={{ textAlign: "left", fontSize: "20px", paddingLeft:"30px"  }}>Name</th>
                             <th scope="col" style={{ fontSize: "20px" }} >Volume</th>
                             <th scope="col" style={{ fontSize: "20px" }}>Owners</th>
                             <th scope="col" style={{ fontSize: "20px" }}>Items</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <br />
+                        
                         {LeaderBoardApi3.map((curElem) => {
                 const { name, volume, owners, items } = curElem;
                 return (
-                        <tr style={{ backgroundColor: "#f8f8f8", margin: '2rem' }} >
+                        <tr style={{ backgroundColor: "#f8f8f8", margin: '2rem' }} className="table1" >
                           
                             <th scope="row" style={{ width: "25%" }}><img className="rounded-circle" src='https://earncashto.com/wp-content/uploads/2021/06/495-4952535_create-digital-profile-icon-blue-user-profile-icon.png' alt='/'
-                                style={{ height: "60px", width: "60px", marginBottom: "19px" }}
+                                style={{ height: "60px", width: "60px",fontSize : "16px" }}
                             />{name}</th>
-                            <td style={{ width: "25%", color: "#818181", fontSize: "20px" }}><span>34 ETH</span>{volume}</td>
-                            <td style={{ width: "25%", fontWeight: "bold" }}>{owners}</td>
-                            <td style={{ width: "25%", fontWeight: "bold" }}>{items}</td>
+                            <td style={{ width: "25%", color: "#818181", fontSize: "18px",paddingTop : '16px',fontSize : "16px" }}><span>34 ETH</span>{volume}</td>
+                            <td style={{ width: "25%", fontWeight: "bold",paddingTop : '16px',fontSize : "16px" }}>{owners}</td>
+                            <td style={{ width: "25%", fontWeight: "bold",paddingTop : '16px',fontSize : "16px" }}>{items}</td>
 
                         </tr>
  );
