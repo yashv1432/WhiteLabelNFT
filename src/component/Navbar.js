@@ -142,7 +142,7 @@ function Navbar() {
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/MyItems">
+                    <Link className="dropdown-item" to="/MyItem">
                       My Items
                     </Link>
                   </li>
