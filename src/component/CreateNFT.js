@@ -6,7 +6,7 @@ function CreateNFT() {
   return (
     <div>
       <div className="container">
-        <div className="text-center mt-5">
+        <div className="text-center mt-4">
           <h4 className="create-nft-font">Create NFT</h4>
         </div>
         <div className="row">

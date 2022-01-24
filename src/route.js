@@ -15,6 +15,7 @@ import Collection_homepage from "./component/Collection_homepage";
 import HelpCenter from "./component/HelpCenter";
 import Suggestion from "./component/Suggestion";
 import Buying from "./component/Buying";
+import MyItems from "./component/MyItems";
 import CreateNFT from "./component/CreateNFT";
 import CreateSingleNFT from "./component/CreateSingleNFT";
 import CreateNFT_collection from "./component/CreateNFT_collection";
@@ -40,6 +41,7 @@ function App() {
             <Route exact path="/LeaderBoard" element={<LeaderBoard />} />
             <Route exact path="/Buying" element={<Buying />} />
             <Route exact path="/create" element={<Create />} />
+            <Route exact path="/MyItems" element={<MyItems />} />
             <Route exact path="/CreateNFT" element={<CreateNFT />} />
             <Route
               exact

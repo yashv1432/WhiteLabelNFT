@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import Single from "../asset/images/single.png";
+import Image from "../asset/images/img-format.PNG";
 import styled from "styled-components";
-import ImageOutlinedIcon from "@mui/icons-material/ImageOutlined";
+// import ImageOutlinedIcon from "@mui/icons-material/ImageOutlined";
 
 const Button = styled.button``;
 
@@ -32,8 +32,9 @@ function CreateSingleNFT(Single) {
               onClick={handleClick}
               style={{ border: "none", backgroundColor: "#fff" }}
             >
-              <ImageOutlinedIcon
-                style={{ fontSize: "150", color: "#366EEF" }}
+              <img
+                src={Image}
+                style={{ width: "100px", marginTop: "3em", color: "#366EEF" }}
               />
             </Button>
             <input
@@ -52,7 +53,7 @@ function CreateSingleNFT(Single) {
               </Link>
             </span>
           </div>
-          <span className="text-secondary font-14">
+          <span className="text-secondary font-13">
             Supported(JPG,PNG,GIF,SVG,MP4, WEBM,WAV) Max size 40mb
           </span>
         </div>
@@ -63,54 +64,56 @@ function CreateSingleNFT(Single) {
           <div className="singlenft-form-box">
             <form className="suggestion-form  p-4 ">
               <div className="mb-3 mt-3">
-                <label for="email" className="form-label">
+                <label for="email" className="form-label input-heading">
                   Name*
                 </label>
-                <input
-                  type="name"
-                  className="form-control"
-                  placeholder="Write your name"
-                  name="email"
-                />
+                <input type="name" className="form-control" name="email" />
               </div>
               <div className="mb-3 mt-3">
-                <label for="comment">Description*</label>
+                <label for="comment" className="input-heading pb-2">
+                  Description*
+                </label>
                 <textarea
                   className="form-control"
                   rows="4"
                   name="text"
                   placeholder="Write description"
                 ></textarea>
-                <spna className="text-secondary">
+                <spna className="text-secondary font-13">
                   0 of 1000 characters used
                 </spna>
               </div>
               <div className="mb-3 mt-3">
-                <label for="collection">
+                <label for="collection" className="input-heading">
                   Collection
                   <Link
                     to="/CreateNFT"
-                    style={{ textDecoration: "none", marginLeft: "23em" }}
+                    style={{
+                      textDecoration: "none",
+                      marginLeft: "23em",
+                      fontWeight: "normal",
+                    }}
                   >
                     Create
                   </Link>
                 </label>
                 {/* <Link>Create</Link> */}
-                <select class="form-select mt-3">
-                  <option>1</option>
+                <select class="form-select mt-3 font-13 text-secondary">
+                  <option>Select Category</option>
                   <option>2</option>
                   <option>3</option>
                   <option>4</option>
                 </select>
               </div>
               <div className="mb-3 mt-3">
-                <label for="email" className="form-label">
+                <label for="email" className="form-label input-heading">
                   blockchain*
                 </label>
                 <input
                   type="name"
                   className="form-control bg-light"
                   placeholder="Ethereum"
+                  id="ethereum"
                   name="email"
                 />
               </div>

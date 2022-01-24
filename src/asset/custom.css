@@ -234,7 +234,8 @@ span {
   font-weight: 1000;
 }
 .bottom-heading-font {
-  font-weight: 550;
+  font-weight: 600;
+  font-size: 16px;
 }
 .card-height {
   height: 110%;
@@ -246,15 +247,38 @@ span {
   height: 60%;
   width: 270px;
 }
+.input-heading {
+  font-size: 15px;
+  font-weight: 600;
+}
+input#ethereum {
+  background-image: url("../asset/images/ehereum.PNG");
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: 20px;
+}
 /*-------------- Single CreateNFT css end------------------ */
 
 /*-------------- Collection CreateNFT css end------------------ */
-.banner-nft-card {
-  height: 60%;
-  width: 300px;
-}
 .collection-nft-card {
-  height: 100px !important;
-  width: 200px !important;
+  height: 240px !important;
+  width: 250px !important;
+}
+.banner-nft-card {
+  height: 220px;
+  width: 600px;
+}
+.text-secondary {
+  color: grey !important;
+}
+/* input,
+input::-webkit-input-placeholder {
+  font-size: 12px;
+} */
+::placeholder {
+  font-size: 13px !important;
+}
+.top-heading {
+  margin-left: 2em !important;
 }
 /*-------------- Collection CreateNFT css end------------------ */
