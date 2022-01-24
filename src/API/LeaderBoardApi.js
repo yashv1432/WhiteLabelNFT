@@ -224,3 +224,12 @@ export const LeaderBoardApi5 = [
         itemssold:"10k"
     },
 ];
+
+
+export const LeaderBoardApi6 = [
+    {
+        Collections_title:"Abstract Illusion",
+         collection_image:"",
+          no_of_items:"2",
+    }
+];
