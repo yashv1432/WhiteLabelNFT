@@ -8,6 +8,9 @@ function MyItems() {
   return (
     <>
       <Upper_MyItems />
+      <div>
+        <h1>Ankit Jain</h1>
+      </div>
       {/* <div className="col-md-3 col-lg-3 col-sm-6 col-11">
         <div className="container__tile">
           <img id="nft__photo" className="img-fluid" src={image} alt="/" />
