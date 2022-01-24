@@ -1,8 +1,12 @@
+
+
+
+
 import React, { Component } from 'react'
 // import './Top_collection.css'
-import {LeaderBoardApi3 } from "../API/LeaderBoardApi";
+import {LeaderBoardApi5 } from "../API/LeaderBoardApi";
 
-export class Top_collection extends Component {
+export class TopSeller extends Component {
     render() {
         return (
 
@@ -10,7 +14,7 @@ export class Top_collection extends Component {
             <div style={{ marginLeft: "128PX", marginRight: "128px" }}>
                 {/* <h2>Hello</h2> */}
                 <div className='Leader_Board_container'>
-                    <h1 style={{ fontSize: "20px", fontWeight: "bold" }}>Top Collections</h1>
+                    <h1 style={{ fontSize: "20px", fontWeight: "bold" }}>Top Sellers</h1>
                     <div className="dropdown">
                         <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" placeholder='All'
                             style={{ backgroundColor: "white", color: "black", border: "1px solid #ddd" }}
@@ -30,23 +34,22 @@ export class Top_collection extends Component {
                         <tr>
                             <th scope="col" style={{ textAlign: "left", fontSize: "20px" }}>Name</th>
                             <th scope="col" style={{ fontSize: "20px" }} >Volume</th>
-                            <th scope="col" style={{ fontSize: "20px" }}>Owners</th>
-                            <th scope="col" style={{ fontSize: "20px" }}>Items</th>
+                            <th scope="col" style={{ fontSize: "20px" }}>Items sold</th>
                         </tr>
                     </thead>
                     <tbody>
                         <br />
-                        {LeaderBoardApi3.map((curElem) => {
-                const { name, volume, owners, items } = curElem;
+                        {LeaderBoardApi5.map((curElem) => {
+                const { name, volume, itemssold } = curElem;
                 return (
-                        <tr style={{ backgroundColor: "#f8f8f8", margin: '2rem' }} >
+                        <tr style={{ backgroundColor: "#f8f8f8", borderCollapse: 'separate' , 
+                        borderSpacing: '0 1em'}} >
                           
                             <th scope="row" style={{ width: "25%" }}><img className="rounded-circle" src='https://earncashto.com/wp-content/uploads/2021/06/495-4952535_create-digital-profile-icon-blue-user-profile-icon.png' alt='/'
                                 style={{ height: "60px", width: "60px", marginBottom: "19px" }}
                             />{name}</th>
                             <td style={{ width: "25%", color: "#818181", fontSize: "20px" }}><span>34 ETH</span>{volume}</td>
-                            <td style={{ width: "25%", fontWeight: "bold" }}>{owners}</td>
-                            <td style={{ width: "25%", fontWeight: "bold" }}>{items}</td>
+                            <td style={{ width: "25%", fontWeight: "bold" }}>{itemssold}</td>
 
                         </tr>
  );
@@ -62,4 +65,5 @@ export class Top_collection extends Component {
     }
 }
 
-export default Top_collection
+export default TopSeller
+
