@@ -7,6 +7,9 @@ import Footer from "./component/Footer";
 import LeaderBoard from "./component/LeaderBoard";
 import Collections_tile from "./component/Collections_tile";
 import Top_collection from "./component/Top_collection";
+import TopBidders from './component/TopBidders';
+// import TopCollection from './component/TopCollection';
+import TopSeller from './component/TopSeller';
 import Create from "./component/Create";
 import "./asset/custom.css";
 
@@ -36,7 +39,9 @@ function App() {
             />
             <Route exact path="/HelpCenter" element={<HelpCenter />} />
             <Route exact path="/Suggestion" element={<Suggestion />} />
-            <Route exact path="/topCollection" element={<Top_collection />} />
+            <Route exact path="/Top_collection" element={<Top_collection />} />
+            <Route exact path='/TopBidders' element={<TopBidders/>}/>
+            <Route exact path='/TopSeller' element={<TopSeller/>}/>
             <Route exact path="/LeaderBoard" element={<LeaderBoard />} />
             <Route exact path="/Buying" element={<Buying />} />
             <Route exact path="/create" element={<Create />} />
