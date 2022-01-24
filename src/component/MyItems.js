@@ -2,15 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Upper_MyItems from "./Upper_MyItems";
 
-const Myitem_API = {};
+// const Myitem_API = {};
 
 function MyItems() {
   return (
     <>
       <Upper_MyItems />
-      <div>
-        <h1>Ankit Jain</h1>
-      </div>
+      <h1>hello</h1>
       {/* <div className="col-md-3 col-lg-3 col-sm-6 col-11">
         <div className="container__tile">
           <img id="nft__photo" className="img-fluid" src={image} alt="/" />
