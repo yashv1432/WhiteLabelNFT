@@ -7,9 +7,9 @@ import Footer from "./component/Footer";
 import LeaderBoard from "./component/LeaderBoard";
 import Collections_tile from "./component/Collections_tile";
 import Top_collection from "./component/Top_collection";
-import TopBidders from './component/TopBidders';
+import TopBidders from "./component/TopBidders";
 // import TopCollection from './component/TopCollection';
-import TopSeller from './component/TopSeller';
+import TopSeller from "./component/TopSeller";
 import Create from "./component/Create";
 import "./asset/custom.css";
 
@@ -18,6 +18,8 @@ import Collection_homepage from "./component/Collection_homepage";
 import HelpCenter from "./component/HelpCenter";
 import Suggestion from "./component/Suggestion";
 import Buying from "./component/Buying";
+import MyItems from "./component/MyItems";
+import MyItems_Collection from "./component/MyItems_Collection";
 import CreateNFT from "./component/CreateNFT";
 import CreateSingleNFT from "./component/CreateSingleNFT";
 import CreateNFT_collection from "./component/CreateNFT_collection";
@@ -40,10 +42,16 @@ function App() {
             <Route exact path="/HelpCenter" element={<HelpCenter />} />
             <Route exact path="/Suggestion" element={<Suggestion />} />
             <Route exact path="/Top_collection" element={<Top_collection />} />
-            <Route exact path='/TopBidders' element={<TopBidders/>}/>
-            <Route exact path='/TopSeller' element={<TopSeller/>}/>
+            <Route exact path="/TopBidders" element={<TopBidders />} />
+            <Route exact path="/TopSeller" element={<TopSeller />} />
             <Route exact path="/LeaderBoard" element={<LeaderBoard />} />
             <Route exact path="/Buying" element={<Buying />} />
+            <Route exact path="/MyItems" element={<MyItems />} />
+            <Route
+              exact
+              path="/MyItems_Collection"
+              element={<MyItems_Collection />}
+            />
             <Route exact path="/create" element={<Create />} />
             <Route exact path="/CreateNFT" element={<CreateNFT />} />
             <Route
