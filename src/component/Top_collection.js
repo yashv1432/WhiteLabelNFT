@@ -43,7 +43,7 @@ export class Top_collection extends Component {
                         <tr style={{ backgroundColor: "#f8f8f8", margin: '2rem' }} className="table1" >
                           
                             <th scope="row" style={{ width: "25%" }}><img className="rounded-circle" src='https://earncashto.com/wp-content/uploads/2021/06/495-4952535_create-digital-profile-icon-blue-user-profile-icon.png' alt='/'
-                                style={{ height: "60px", width: "60px",fontSize : "16px" }}
+                                style={{ height: "42px", width: "42px",fontSize : "16px" }}
                             />{name}</th>
                             <td style={{ width: "25%", color: "#818181", fontSize: "18px",paddingTop : '16px',fontSize : "16px" }}><span>34 ETH</span>{volume}</td>
                             <td style={{ width: "25%", fontWeight: "bold",paddingTop : '16px',fontSize : "16px" }}>{owners}</td>
