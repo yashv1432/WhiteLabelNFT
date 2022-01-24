@@ -183,7 +183,7 @@ function LeaderBoard() {
             <Link className="view" to="/Top_collection"> View More</Link>
           </div>
         </div>
-      </div>
+      
       
       <div className="sales">
 
@@ -291,6 +291,7 @@ function LeaderBoard() {
       
 
       {/* Top NFT sales */}
+    </div>
     </div>
   );
 }
