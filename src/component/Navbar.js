@@ -112,10 +112,11 @@ function Navbar() {
               </li>
               <li style={{ lineHeight: "35px", color: "gray" }}>|</li>
               <li>
-                <img
+              <Link  to="/Notification">
+                     <img className="noti"
                   src={require("../asset/images/notification.png")}
                   style={{ color: "gray", cursor: "pointer", marginTop: "6px" }}
-                ></img>
+                ></img></Link>
               </li>
 
               <li className="nav-item dropdown">

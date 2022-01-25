@@ -11,9 +11,9 @@ function LeaderBoard() {
       {/* 3 Tables */}
       <div className="container">
         <div className="row align-items-start">
-          <div className="col leaderboardTop">
+          <div className="col leaderboardTop" style={{ width: "33.33%" }}>
             <div className="leaderboardTitle">
-              <div className="col">Top Bidders</div>
+              <div className="col" style={{ fontSize: "14px" }}>Top Bidders</div>
               <div className="dropdown col leaderboardDropdown">
                 <button
                   className="btn border dropdown-toggle"
@@ -68,9 +68,9 @@ function LeaderBoard() {
             </div>
             <Link className="view" to="/TopBidders"> View More</Link>
           </div>
-          <div className="col leaderboardTop">
+          <div className="col leaderboardTop" style={{ width: "33.33%" }}>
             <div className="leaderboardTitle">
-              <div className="col">Top Seller</div>
+              <div className="col" style={{ fontSize: "14px" }}>Top Seller</div>
               <div className="dropdown col leaderboardDropdown">
                 <button
                   className="btn border dropdown-toggle"
@@ -125,9 +125,9 @@ function LeaderBoard() {
             </div>
             <Link className="view" to="/TopSeller"> View More</Link>
           </div>
-          <div className="col leaderboardTop">
+          <div className="col leaderboardTop" style={{ width: "33.33%" }}>
             <div className="leaderboardTitle">
-              <div className="col">Top Collections</div>
+              <div className="col"style={{ fontSize: "14px" }}>Top Collections</div>
               <div className="dropdown col leaderboardDropdown">
                 <button
                   className="btn border dropdown-toggle"

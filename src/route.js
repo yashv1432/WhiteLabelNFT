@@ -5,6 +5,7 @@ import Tile__homepage from "./component/Tile__homepage";
 import Upper__homepage from "./component/Upper__homepage";
 import Footer from "./component/Footer";
 import LeaderBoard from "./component/LeaderBoard";
+import Notification from "./component/Notification";
 import Collections_tile from "./component/Collections_tile";
 import Top_collection from "./component/Top_collection";
 import TopBidders from './component/TopBidders';
@@ -45,6 +46,7 @@ function App() {
             <Route exact path="/LeaderBoard" element={<LeaderBoard />} />
             <Route exact path="/Buying" element={<Buying />} />
             <Route exact path="/create" element={<Create />} />
+            <Route exact path="/Notification" element={<Notification />} />
             <Route exact path="/CreateNFT" element={<CreateNFT />} />
             <Route
               exact

@@ -287,3 +287,22 @@ input::-webkit-input-placeholder {
   margin-left: 2em !important;
 }
 /*-------------- Collection CreateNFT css end------------------ */
+/*-------------- navbar mob css------------------ */
+@media only screen and (max-width: 1170px){
+  .navbar-brand
+  {
+    margin-left: -35px;
+   
+  }
+.navbar-toggler{
+  margin-left: 300px !important;
+  margin-top: -51px !important;
+  padding: 0px;
+}
+.navbar-nav 
+{
+  margin-left: -40px;
+}
+
+
+}

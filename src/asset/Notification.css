@@ -1,0 +1,30 @@
+.head
+{
+    text-align: left;
+    font: normal normal 600 18px/27px Poppins;
+    letter-spacing: 0px;
+    color: #191919;
+    opacity: 1;
+    margin-top: 10px;
+}
+/* .notibox{
+    background: #241919 0% 0% no-repeat padding-box;
+    opacity: 1;
+    top: 141px;
+left: 1553px;
+width: 367px;
+height: 47px;
+} */
+.noti_img
+{
+    background: transparent 0% 0% no-repeat padding-box;
+opacity: 1;
+margin-left: -20px;
+margin-top: -14px;
+}
+.notihead
+{
+    margin-top: -8px !important;
+    margin-left: -35px !important;
+    font-size: 14px !important;
+}
