@@ -8,7 +8,7 @@ export class TopBidders extends Component {
     return (
       <div style={{ marginLeft: "128PX", marginRight: "128px" }}>
         {/* <h2>Hello</h2> */}
-        <div className="Leader_Board_container">
+        <div className="Leader_Board_container" style={{marginBottom : "30px"}}>
           <h1 style={{ fontSize: "20px", fontWeight: "bold" }}>Top Buyers</h1>
           <div className="dropdown">
             <button
@@ -45,61 +45,37 @@ export class TopBidders extends Component {
             </ul>
           </div>
         </div>
-        <table
-          className="table"
-          style={{
-            marginTop: "35px",
-            width: "100%",
-            // borderCollapse: "separate",
-          }}
-        >
-          <thead>
-            <tr>
-              <th scope="col" style={{ textAlign: "left", fontSize: "20px",paddingLeft:"30px" }}>
-                Name
-              </th>
-              <th scope="col" style={{ fontSize: "20px" }}>
-                Volume
-              </th>
-              <th scope="col" style={{ fontSize: "20px" }}>
-                Items bought
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            
-            {LeaderBoardApi4.map((curElem) => {
+       
+
+        <div class="container CollectionHeading">
+          <div class="row">
+            <div class="col" style={{paddingLeft : "40px"}}>Name</div>
+            <div class="col" style={{padding:"0px",margin:"0px"}}>Volume</div>
+            <div class="col" style={{padding:"0px",margin:"0px"}}>Items bought</div>
+          </div>
+        </div>
+        {LeaderBoardApi4.map((curElem) => {
               const { name, volume, itemsbought } = curElem;
               return (
-                <tr style={{ backgroundColor: "#f8f8f8" }} className="table1">
-                  <th scope="row" style={{ width: "25%" }}>
-                    <img
+        <div class="container ">
+          <div class="row CollectionItem" style={{ backgroundColor: "#f8f8f8"}}>
+            <div class="col"> <img
                       className="rounded-circle"
                       src="https://earncashto.com/wp-content/uploads/2021/06/495-4952535_create-digital-profile-icon-blue-user-profile-icon.png"
                       alt="/"
                       style={{
-                        height: "42px",
-                        width: "42px",
-                        // marginBottom: "19px",
-                        fontSize : "16px"
+                        height: "60px",
+                        width: "60px",
+                        fontSize: "16px",
                       }}
-                    />
-                    {name}
-                  </th>
-                  <td
-                    style={{ width: "25%", color: "#818181", fontSize: "16px", paddingTop : '16px'}}
-                  >
-                    <span>34 ETH</span>
-                    {volume}
-                  </td>
-                  <td style={{ width: "25%", fontWeight: "bold",paddingTop : '16px',fontSize : "16px"}}>
-                    {itemsbought}
-                  </td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
+                    />{name}</div>
+            <div class="col" style={{color: "#818181" , fontWeight: "normal"}}>  <span>34 ETH</span>
+                    {volume}</div>
+            <div class="col">{itemsbought}</div>
+          </div>
+        </div>
+         );
+        })}
       </div>
     );
   }

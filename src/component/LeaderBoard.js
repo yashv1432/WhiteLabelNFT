@@ -7,7 +7,7 @@ function LeaderBoard() {
   const [state, setState] = useState(LeaderBoardApi);
   return (
     <div>
-      <h1>Leaderboard</h1>
+      <h1 className="leader" style={{marginBottom : "30px"}}>Leaderboard</h1>
       {/* 3 Tables */}
       <div className="container">
         <div className="row align-items-start">

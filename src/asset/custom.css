@@ -1,8 +1,8 @@
 .Collections__container {
   margin-top: 50px;
-  width: 326px;
-  height: 350px;
-  margin-left: 128px;
+  width: 280px;
+  height: 264px;
+  /* margin-left: 128px; */
   background-color: #f8f8f8;
   display: flex;
   flex-direction: column;
@@ -14,9 +14,9 @@ ul {
   list-style: none;
 }
 
-.rounded-circle {
+ul li .rounded-circle {
   width: 100%;
-  height: 300px;
+  /* height: 300px; */
   transform: scale(0.5);
 }
 
@@ -83,6 +83,7 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   font-family: "Assistant", sans-serif;
+  margin-top: 3px;
 }
 
 .value {
@@ -229,11 +230,20 @@ span {
 .font-weight-700 {
   font-weight: 700;
 }
+.font-weight-900 {
+  font-weight: 900;
+}
 .font-weight-normal {
   font-weight: normal !important;
 }
 
 /* --------------Font style css---------------- */
+
+/* --------------Color css---------------- */
+.text-grey {
+  color: #707070;
+}
+/* --------------Color css end---------------- */
 
 /* ------------Suggestions form css------------ */
 .suggestion-form {
@@ -341,3 +351,149 @@ input::-webkit-input-placeholder {
 
 
 }
+.add-btn {
+  width: 180px;
+}
+.item_middle__heading {
+  line-height: 18.4px;
+  color: black;
+  text-decoration: none;
+}
+.Myitems_Collections__container {
+  margin-top: 50px;
+  width: 300px;
+  height: 340px;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  border-radius: 13px;
+  justify-content: center;
+}
+/*-------------- My Items css end------------------ */
+
+/* -------------------button styles css------------ */
+.btn-normal-size {
+  width: 120px;
+}
+.btn-text:hover {
+  color: white;
+  font-size: 14px;
+}
+/* -------------------button styles css------------ */
+
+/* -----------------Edit Profile css------------ */
+.rounded-circle {
+  width: 160px;
+  height: 150px;
+}
+.btn-choose-file {
+  margin-left: -8em !important;
+}
+/* -----------------Edit Profile css------------ */
+
+/* ---------------Mobile/Media css  max-width 900px------------ */
+@media only screen and (max-width: 900px) {
+  /* Edit Profile */
+  .btn-choose-file {
+    display: grid;
+    width: 100px;
+  }
+  .img-responsive {
+    width: 100px;
+    height: 100px;
+    margin-top: 1em;
+  }
+  .btn-text {
+    font-size: 10px !important;
+  }
+}
+/* ---------------Mobile/Media css------------ */
+
+/* ---------------Mobile/Media css  max-width 769px------------ */
+@media only screen and (max-width: 769px) {
+  /* Edit Profile */
+  /* .form-responsive {
+    width: 550px;
+    margin-left: 3em;
+  } */
+  .btn-choose-file {
+    width: 80px;
+    margin-left: 2em !important;
+    margin-top: 3em !important;
+  }
+  .img-responsive {
+    width: 80px;
+    height: 80px;
+  }
+  .btn-text {
+    font-size: 8px !important;
+  }
+}
+/* ---------------Mobile/Media css------------ */
+
+/* ---------------Mobile view css  max-width 575px------------ */
+@media only screen and (max-width: 575px) {
+  /* Edit Profile */
+  .form-responsive {
+    width: 500px;
+    margin-left: 3em;
+  }
+  .btn-choose-file {
+    width: 150px;
+    margin-left: 10em !important;
+    margin-top: 0.7em !important;
+  }
+  .btn-text {
+    font-size: 10px !important;
+  }
+  .img-responsive {
+    width: 80px;
+    height: 80px;
+    margin-left: 12em !important;
+  }
+}
+/* ---------------Mobile view css end------------ */
+
+/* ---------------Mobile view css  max-width 530px------------ */
+@media only screen and (max-width: 530px) {
+  /* Edit Profile */
+  .form-responsive {
+    width: 500px;
+    margin-left: 1em;
+  }
+  .btn-choose-file {
+    width: 150px;
+    margin-left: 10em !important;
+    margin-top: 0.7em !important;
+  }
+  .btn-text {
+    font-size: 10px !important;
+  }
+  .img-responsive {
+    width: 80px;
+    height: 80px;
+    margin-left: 12em !important;
+  }
+}
+/* ---------------Mobile view css end------------ */
+/* ---------------Mobile view css  max-width 489px------------ */
+@media only screen and (max-width: 489px) {
+  /* Edit Profile */
+  .form-responsive {
+    width: 400px;
+  }
+  .btn-choose-file {
+    width: 150px;
+    margin-left: 6em !important;
+    margin-top: 0.7em !important;
+  }
+  .btn-text {
+    font-size: 10px !important;
+  }
+  .img-responsive {
+    width: 80px;
+    height: 80px;
+    margin-left: 8em !important;
+  }
+}
+/* ---------------Mobile view css end------------ */

@@ -12,6 +12,7 @@ import TopBidders from "./component/TopBidders";
 // import TopCollection from './component/TopCollection';
 import TopSeller from "./component/TopSeller";
 import Create from "./component/Create";
+import MyProfile from "./component/MyProfile";
 import "./asset/custom.css";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -20,10 +21,15 @@ import HelpCenter from "./component/HelpCenter";
 import Suggestion from "./component/Suggestion";
 import Buying from "./component/Buying";
 import MyItems from "./component/MyItems";
+import Edit_Profile from "./component/Edit_Profile";
 import MyItems_Collection from "./component/MyItems_Collection";
 import CreateNFT from "./component/CreateNFT";
 import CreateSingleNFT from "./component/CreateSingleNFT";
+import About from "./component/About";
+import Fixed_Price from "./component/Fixed_Price";
+import Highest_Bid from "./component/Highest_Bid";
 import CreateNFT_collection from "./component/CreateNFT_collection";
+import CollectionDetails from "./component/CollectionDetails"
 
 function App() {
   return (
@@ -56,6 +62,8 @@ function App() {
             <Route exact path="/create" element={<Create />} />
             <Route exact path="/Notification" element={<Notification />} />
             <Route exact path="/CreateNFT" element={<CreateNFT />} />
+            <Route exact path="/CollectionDetails" element={<CollectionDetails />} />
+            <Route eaxct path="/MyProfile" element={<MyProfile/>}/>
             <Route
               exact
               path="/CreateSingleNFT"
@@ -66,6 +74,10 @@ function App() {
               path="/CreateNFT_collection"
               element={<CreateNFT_collection />}
             />
+            <Route exact path="/Edit_Profile" element={<Edit_Profile />} />
+            <Route exact path="/About" element={<About />} />
+            <Route exact path="/Fixed_Price" element={<Fixed_Price />} />
+            <Route exact path="Highest_Bid" element={<Highest_Bid />} />
           </Routes>
         </switch>
       </Router>

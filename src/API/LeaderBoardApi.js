@@ -228,8 +228,105 @@ export const LeaderBoardApi5 = [
 
 export const LeaderBoardApi6 = [
     {
-        Collections_title:"Abstract Illusion",
-         collection_image:"",
+        title:"Abstract Illusion",
+         image:"https://earncashto.com/wp-content/uploads/2021/06/495-4952535_create-digital-profile-icon-blue-user-profile-icon.png",
           no_of_items:"2",
-    }
+    },
+    {
+        title:"Abstract Illusion",
+         image:"https://earncashto.com/wp-content/uploads/2021/06/495-4952535_create-digital-profile-icon-blue-user-profile-icon.png",
+          no_of_items:"2",
+    },
+    {
+        title:"Abstract Illusion",
+         image:"https://earncashto.com/wp-content/uploads/2021/06/495-4952535_create-digital-profile-icon-blue-user-profile-icon.png",
+          no_of_items:"2",
+    },
+    {
+        title:"Abstract Illusion",
+         image:"https://earncashto.com/wp-content/uploads/2021/06/495-4952535_create-digital-profile-icon-blue-user-profile-icon.png",
+          no_of_items:"2",
+    },
+    {
+        title:"Abstract Illusion",
+         image:"https://earncashto.com/wp-content/uploads/2021/06/495-4952535_create-digital-profile-icon-blue-user-profile-icon.png",
+          no_of_items:"2",
+    },
+    {
+        title:"Abstract Illusion",
+         image:"https://earncashto.com/wp-content/uploads/2021/06/495-4952535_create-digital-profile-icon-blue-user-profile-icon.png",
+          no_of_items:"2",
+    },
+    {
+        title:"Abstract Illusion",
+         image:"https://earncashto.com/wp-content/uploads/2021/06/495-4952535_create-digital-profile-icon-blue-user-profile-icon.png",
+          no_of_items:"2",
+    },
+    {
+        title:"Abstract Illusion",
+         image:"https://earncashto.com/wp-content/uploads/2021/06/495-4952535_create-digital-profile-icon-blue-user-profile-icon.png",
+          no_of_items:"2",
+    },
+    {
+        title:"Abstract Illusion",
+         image:"https://earncashto.com/wp-content/uploads/2021/06/495-4952535_create-digital-profile-icon-blue-user-profile-icon.png",
+          no_of_items:"2",
+    },
+    {
+        title:"Abstract Illusion",
+         image:"https://earncashto.com/wp-content/uploads/2021/06/495-4952535_create-digital-profile-icon-blue-user-profile-icon.png",
+          no_of_items:"2",
+    },
+    {
+        title:"Abstract Illusion",
+         image:"https://earncashto.com/wp-content/uploads/2021/06/495-4952535_create-digital-profile-icon-blue-user-profile-icon.png",
+          no_of_items:"2",
+    },
+    {
+        title:"Abstract Illusion",
+         image:"https://earncashto.com/wp-content/uploads/2021/06/495-4952535_create-digital-profile-icon-blue-user-profile-icon.png",
+          no_of_items:"2",
+    },
+    {
+        title:"Abstract Illusion",
+         image:"https://earncashto.com/wp-content/uploads/2021/06/495-4952535_create-digital-profile-icon-blue-user-profile-icon.png",
+          no_of_items:"2",
+    },
+    {
+        title:"Abstract Illusion",
+         image:"https://earncashto.com/wp-content/uploads/2021/06/495-4952535_create-digital-profile-icon-blue-user-profile-icon.png",
+          no_of_items:"2",
+    },
+    {
+        title:"Abstract Illusion",
+         image:"https://earncashto.com/wp-content/uploads/2021/06/495-4952535_create-digital-profile-icon-blue-user-profile-icon.png",
+          no_of_items:"2",
+    },
+    {
+        title:"Abstract Illusion",
+         image:"https://earncashto.com/wp-content/uploads/2021/06/495-4952535_create-digital-profile-icon-blue-user-profile-icon.png",
+          no_of_items:"2",
+    },
+    
+];
+
+
+
+export const AbstractApi = [
+    {
+        image : "https://th.bing.com/th/id/R.86a13194299b9242b35c43409764d833?rik=EUjhD0IqVmGMGQ&riu=http%3a%2f%2fwww.baltana.com%2ffiles%2fwallpapers-8%2fGlitter-Bokeh-Background-Wallpaper-24846.jpg&ehk=a4S82qTwktCWbbHtyq1%2bPsAr68%2fM2HrNOVsDQLVc0Cw%3d&risl=1&pid=ImgRaw&r=0",
+        price : "0.32 ETH",
+        title:"Abstract Texture",
+          maxPrice:" Highest bid: ",
+          maxPrice2:"0.48 ETH",
+          daysLeft:"34" 
+    },
+    {
+        image : "https://th.bing.com/th/id/R.86a13194299b9242b35c43409764d833?rik=EUjhD0IqVmGMGQ&riu=http%3a%2f%2fwww.baltana.com%2ffiles%2fwallpapers-8%2fGlitter-Bokeh-Background-Wallpaper-24846.jpg&ehk=a4S82qTwktCWbbHtyq1%2bPsAr68%2fM2HrNOVsDQLVc0Cw%3d&risl=1&pid=ImgRaw&r=0",
+        price : "0.32 ETH",
+        title:"3D Art",
+          maxPrice:"Price:",
+          maxPrice2:"0.13 ETH",
+          daysLeft:"34" 
+    },
 ];

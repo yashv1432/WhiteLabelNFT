@@ -1,8 +1,10 @@
-h1
+.leader
 {
+    margin-bottom: 30px;
     font-size: 1.3rem;
     font-weight: bold;
-    margin-left: 128px;
+    margin-left: 7rem;
+
 }
 .leaderboardTop 
 {
@@ -128,13 +130,95 @@ margin: 0rem;
         background-color: "#f8f8f8";
       }
       .table1 > th {
-        /* display: inline-block; */
-        margin-bottom: 2rem;
-        border-bottom: 2rem solid white;
-        height: 1rem;
-        padding: 0px;
+        border-top-left-radius: 13px;
+        border-bottom-left-radius: 13px;
+        background-color: #999;
       }
       tbody, thead
       {
           border-style: none !important;
+      }
+
+      .CollectionItem
+      {
+          align-items: center;
+          margin: 16px 0px 35px 0px;
+          /* padding: 8px 0px; */
+          border: 0px solid;
+    border-radius: 10px;
+      }
+
+      .CollectionItem > div
+      {
+           font-weight: bold;
+           font-size: 16px;
+      }
+      .CollectionHeading>div{
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+
+
+
+.relative>img{
+    height: 230px;
+        width: 100%; 
+}
+      .absolute
+      {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        margin-top: -76px;
+      }
+      .absolute >img
+      {
+        height: 140px;
+        width: 140px;
+      }
+
+      .absolute > h2
+      {
+          font-size: 18px;
+          font-weight: bold;
+          margin-top: 15px;
+      }
+
+
+
+
+
+      .collectionsales
+      {
+          display: flex;
+          text-align: right;
+          margin-top: 13rem;
+      }
+      .title1
+      {
+          border: 1px solid #51bf91;
+          border-radius: 5px;
+          color: #16ad6e;
+          font-size: 12px;
+    padding: 3px;
+      }
+
+      .dropdown-toggle::after
+      {
+        margin-left: 5.255em;
+      }
+
+
+      .MyProfilesales
+      {
+          display: flex;
+          margin-top: 19rem;
+      }
+      .MyProfilesales >div
+      {
+          margin-right: 40px;
       }
