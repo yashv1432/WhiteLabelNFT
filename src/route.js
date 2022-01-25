@@ -21,6 +21,7 @@ import Buying from "./component/Buying";
 import CreateNFT from "./component/CreateNFT";
 import CreateSingleNFT from "./component/CreateSingleNFT";
 import CreateNFT_collection from "./component/CreateNFT_collection";
+import CollectionDetails from "./component/CollectionDetails"
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
             <Route exact path="/Buying" element={<Buying />} />
             <Route exact path="/create" element={<Create />} />
             <Route exact path="/CreateNFT" element={<CreateNFT />} />
+            <Route exact path="/CollectionDetails" element={<CollectionDetails />} />
             <Route
               exact
               path="/CreateSingleNFT"

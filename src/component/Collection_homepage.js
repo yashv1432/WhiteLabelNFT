@@ -17,7 +17,7 @@ export class Collection_homepage extends Component {
                 aria-expanded="false"
                 placeholder="All"
                 style={{
-                  width: "200%",
+                  // width: "200%",
                   backgroundColor: "white",
                   color: "black",
                   border: "1px solid #ddd",
@@ -52,7 +52,7 @@ export class Collection_homepage extends Component {
               data-bs-toggle="dropdown"
               aria-expanded="false"
               style={{
-                width: "100%",
+                // width: "100%",
                 backgroundColor: "white",
                 color: "black",
                 border: "1px solid #ddd",
