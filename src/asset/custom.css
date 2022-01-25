@@ -47,11 +47,6 @@ ul {
   width: 60%;
 }
 
-* {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
 /* .form-control {
   width: 500px;
 } */
@@ -204,6 +199,40 @@ span {
 .font-15 {
   font-size: 15px;
 }
+.font-16 {
+  font-size: 16px;
+}
+.font-17 {
+  font-size: 17px;
+}
+.font-18 {
+  font-size: 18px;
+}
+.font-19 {
+  font-size: 19px;
+}
+.font-20 {
+  font-size: 20px;
+}
+.font-22 {
+  font-size: 22px;
+}
+.font-weight-500 {
+  font-weight: 500;
+}
+.font-weight-550 {
+  font-weight: 550;
+}
+.font-weight-600 {
+  font-weight: 600;
+}
+.font-weight-700 {
+  font-weight: 700;
+}
+.font-weight-normal {
+  font-weight: normal !important;
+}
+
 /* --------------Font style css---------------- */
 
 /* ------------Suggestions form css------------ */
@@ -229,8 +258,14 @@ span {
 .buying-search-btn {
   width: 300px;
 }
+.border-input {
+  border-right: 0 !important;
+}
 .accordion-border {
   border-radius: 5px !important;
+}
+.border-search {
+  border-left: 0 !important;
 }
 /*-------------- Buying css end------------------ */
 
