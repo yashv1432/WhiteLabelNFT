@@ -206,3 +206,14 @@ margin: 0rem;
       {
         margin-left: 5.255em;
       }
+
+
+      .MyProfilesales
+      {
+          display: flex;
+          margin-top: 19rem;
+      }
+      .MyProfilesales >div
+      {
+          margin-right: 40px;
+      }
