@@ -28,7 +28,7 @@ function Upper_MyItems() {
         </div>
         <button type="submit" className="btn btn-primary mt-4 add-btn">
           <span className="font-weight-normal text-white font-14">
-            Add Item
+            Create Collection
           </span>
         </button>
       </div>

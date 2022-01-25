@@ -29,8 +29,7 @@ function HelpCenter() {
                 </h5>
               </Link>
               <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               </p>
             </div>
           </div>
@@ -52,8 +51,7 @@ function HelpCenter() {
                 Selling
               </h5>
               <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               </p>
             </div>
           </div>

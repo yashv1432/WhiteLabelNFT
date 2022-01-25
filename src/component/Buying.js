@@ -4,13 +4,15 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+// import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import AddIcon from "@mui/icons-material/Add";
+import RemoveIcon from "@mui/icons-material/Remove";
 
 function Buying() {
   return (
     <>
       <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
+        <ol class="breadcrumb mt-4 offset-1">
           <li class="breadcrumb-item">
             <Link
               to="/HelpCenter"
@@ -27,22 +29,26 @@ function Buying() {
       </nav>
       <div
         style={{ display: "flex", flexDirection: "row" }}
-        className="offset-3"
+        className="offset-2"
       >
-        <h4>Buying</h4>
+        <h4 className="font-22 font-weight-700" style={{ marginLeft: "3.6em" }}>
+          Buying
+        </h4>
         <div class="input-group mb-3 buying-search-btn">
           <input
             type="text"
-            class="form-control input-box-border"
+            className="form-control border-input input-box-border"
+            style={{ marginLeft: "1em", borderRight: "0" }}
             placeholder="Search"
             aria-label="Recipient's username"
             aria-describedby="button-addon2"
           />
           <div class="input-group-append w-25">
             <button
-              class="btn btn-outline-secondary btn-search-secondary"
+              class="btn btn-search-secondary border border-search"
               type="button"
               id="button-addon2"
+              style={{ borderRadius: "0px 5px 5px 0px" }}
             >
               <i class="fas fa-search"></i>
             </button>
@@ -54,7 +60,7 @@ function Buying() {
           <div className="col-12 col-sm-9  offset-2">
             <Accordion className="mt-3 shadow accordion-border p-3">
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
+                expandIcon={<AddIcon />}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
@@ -74,7 +80,7 @@ function Buying() {
             </Accordion>
             <Accordion className="mt-4 shadow accordion-border p-3">
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
+                expandIcon={<RemoveIcon />}
                 aria-controls="panel2a-content"
                 id="panel2a-header"
               >
@@ -94,7 +100,7 @@ function Buying() {
             </Accordion>
             <Accordion className="mt-4 shadow accordion-border p-3">
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
+                expandIcon={<AddIcon />}
                 aria-controls="panel2a-content"
                 id="panel2a-header"
               >
@@ -114,7 +120,7 @@ function Buying() {
             </Accordion>
             <Accordion className="mt-4 shadow accordion-border p-3">
               <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
+                expandIcon={<RemoveIcon />}
                 aria-controls="panel2a-content"
                 id="panel2a-header"
               >

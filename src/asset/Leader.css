@@ -4,6 +4,7 @@
     font-size: 1.3rem;
     font-weight: bold;
     margin-left: 7rem;
+
 }
 .leaderboardTop 
 {
@@ -52,11 +53,14 @@ margin: 0rem 2rem;
 {
     font-size: 0.9rem;
     font-weight: bold;
+    margin-top: 30px;
 }
 .LeaderboardInsideDetails > p
 {
     font-size: 0.8rem;
     color: #3977ff;
+    margin-top: 60px;
+    margin-left: -85px;
 }
 .LeaderboardInsideDetails > p> span{
     margin: 0rem;
@@ -94,7 +98,7 @@ margin: 0rem;
       } */
       .container__tile
       {
-          margin: 2rem 0rem !important;
+          margin-top: 20px;
       }
 
       .sales
@@ -107,6 +111,7 @@ margin: 0rem;
       {
           display: flex;
           align-items: center;
+          margin-left: -110px;
       }
       /* .hey
       {
