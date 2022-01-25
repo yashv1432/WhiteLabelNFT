@@ -6,12 +6,12 @@ function Navbar() {
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid" style={{ backgroundColor: "white" }}>
-          <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" to="/About">
             <img
               src={require("../asset/images/logo.png")}
               style={{ width: "40px" }}
             />
-          </a>
+          </Link>
           <form className="d-flex p-0 m-0 " style={{ width: "90%" }}>
             <input
               className="form-control "
@@ -134,7 +134,7 @@ function Navbar() {
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <Link className="dropdown-item" to="/Create">
+                    <Link className="dropdown-item" to="/Edit_Profile">
                       Profile
                     </Link>
                   </li>
@@ -149,10 +149,16 @@ function Navbar() {
                 </ul>
               </li>
               <li>
-                <img
-                  src={require("../asset/images/wallet.png")}
-                  style={{ color: "gray", cursor: "pointer", marginTop: "6px" }}
-                ></img>
+                <Link to="/Create">
+                  <img
+                    src={require("../asset/images/wallet.png")}
+                    style={{
+                      color: "gray",
+                      cursor: "pointer",
+                      marginTop: "6px",
+                    }}
+                  ></img>
+                </Link>
               </li>
             </ul>
           </div>

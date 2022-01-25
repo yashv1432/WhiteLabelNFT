@@ -45,7 +45,7 @@ function Buying() {
           />
           <div class="input-group-append w-25">
             <button
-              class="btn btn-search-secondary border border-search"
+              className="btn btn-search-secondary border border-search"
               type="button"
               id="button-addon2"
               style={{ borderRadius: "0px 5px 5px 0px" }}

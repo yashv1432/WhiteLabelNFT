@@ -29,7 +29,8 @@ function HelpCenter() {
                 </h5>
               </Link>
               <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor
               </p>
             </div>
           </div>
@@ -48,10 +49,11 @@ function HelpCenter() {
                 }}
               ></i>
               <h5 class="card-title" style={{ marginBottom: "0.5rem" }}>
-                Selling
+                <Link to="/Fixed_Price">Selling</Link>
               </h5>
               <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor
               </p>
             </div>
           </div>
@@ -70,7 +72,7 @@ function HelpCenter() {
                 }}
               ></i>
               <h5 class="card-title" style={{ marginBottom: "0.5rem" }}>
-                Creating Collection
+                <Link to="/Highest_Bid">Creating Collection</Link>
               </h5>
               <p class="card-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
