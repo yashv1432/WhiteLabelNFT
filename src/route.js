@@ -11,6 +11,7 @@ import TopBidders from "./component/TopBidders";
 // import TopCollection from './component/TopCollection';
 import TopSeller from "./component/TopSeller";
 import Create from "./component/Create";
+import MyProfile from "./component/MyProfile";
 import "./asset/custom.css";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -27,6 +28,7 @@ import About from "./component/About";
 import Fixed_Price from "./component/Fixed_Price";
 import Highest_Bid from "./component/Highest_Bid";
 import CreateNFT_collection from "./component/CreateNFT_collection";
+import CollectionDetails from "./component/CollectionDetails"
 
 function App() {
   return (
@@ -58,6 +60,8 @@ function App() {
             />
             <Route exact path="/create" element={<Create />} />
             <Route exact path="/CreateNFT" element={<CreateNFT />} />
+            <Route exact path="/CollectionDetails" element={<CollectionDetails />} />
+            <Route eaxct path="/MyProfile" element={<MyProfile/>}/>
             <Route
               exact
               path="/CreateSingleNFT"
