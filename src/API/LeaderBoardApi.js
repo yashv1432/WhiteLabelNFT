@@ -329,4 +329,12 @@ export const AbstractApi = [
           maxPrice2:"0.13 ETH",
           daysLeft:"34" 
     },
+    {
+        image : "https://th.bing.com/th/id/R.86a13194299b9242b35c43409764d833?rik=EUjhD0IqVmGMGQ&riu=http%3a%2f%2fwww.baltana.com%2ffiles%2fwallpapers-8%2fGlitter-Bokeh-Background-Wallpaper-24846.jpg&ehk=a4S82qTwktCWbbHtyq1%2bPsAr68%2fM2HrNOVsDQLVc0Cw%3d&risl=1&pid=ImgRaw&r=0",
+        price : "0.32 ETH",
+        title:"3D Art",
+          maxPrice:"Price:",
+          maxPrice2:"0.13 ETH",
+          daysLeft:"34" 
+    },
 ];
