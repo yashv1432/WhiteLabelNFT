@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 // import './Top_collection.css'
 import { AbstractApi } from "../API/LeaderBoardApi";
+
 import "../asset/Leader.css";
+import { Link } from "react-router-dom";
 
 export class CollectionDetails extends Component {
   render() {
@@ -17,12 +19,34 @@ export class CollectionDetails extends Component {
                 <p style={{marginTop :"10px", marginBottom:"0px"}}>The abstract illusion is a collection of NFT which consist</p>
                 <p style={{marginBottom:"0px"}}>abstract patterns that create illusion</p>
             </div>
+         
+
+        <li className="nav-item dropdown position-absolute absolutedot list-unstyled">
+                <a
+                  className="nav-link dropdown"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  style={{ fontSize: "16px"}}
+                >
+                   <i style={{color:"#afafaf"}} class="fas fa-ellipsis-h"></i>
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <Link className="dropdown-item threedot" to="/Report">
+                    <i style={{margin:"0px 5px 0px 10px"}} class="fas fa-flag"></i>  Report
+                    </Link>
+                  </li>
+                </ul>
+              </li>
 
             <div className="collectionsales">
 
 <div className="sales1">
   {/* <h1>Top NFT sales</h1> */}
-  <div class="input-group buying-search-btn">
+  <div class="input-group buying-search-btn" style={{marginLeft : "150px"}}>
           <input
             type="text"
             className="form-control border-input input-box-border"
@@ -134,7 +158,7 @@ export class CollectionDetails extends Component {
     const { image, title, price, maxPrice, maxPrice2, daysLeft } =
       curElem;
     return (
-        <div className="col-md-3 col-lg-3 col-sm-6 col-11 images">
+        <div className="col-md-3 col-lg-3 col-sm-6 col-11 images" style={{marginLeft : "35px"}} >
       <div className="container__tile">
         <img
           id="nft__photo"
