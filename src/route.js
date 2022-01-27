@@ -28,7 +28,7 @@ import About from "./component/About";
 import Fixed_Price from "./component/Fixed_Price";
 import Highest_Bid from "./component/Highest_Bid";
 import CreateNFT_collection from "./component/CreateNFT_collection";
-import CollectionDetails from "./component/CollectionDetails"
+import CollectionDetails from "./component/CollectionDetails";
 
 function App() {
   return (
@@ -60,8 +60,12 @@ function App() {
             />
             <Route exact path="/create" element={<Create />} />
             <Route exact path="/CreateNFT" element={<CreateNFT />} />
-            <Route exact path="/CollectionDetails" element={<CollectionDetails />} />
-            <Route eaxct path="/MyProfile" element={<MyProfile/>}/>
+            <Route
+              exact
+              path="/CollectionDetails"
+              element={<CollectionDetails />}
+            />
+            <Route eaxct path="/MyProfile" element={<MyProfile />} />
             <Route
               exact
               path="/CreateSingleNFT"
@@ -72,10 +76,14 @@ function App() {
               path="/CreateNFT_collection"
               element={<CreateNFT_collection />}
             />
-             <Route exact path="/create" element={<Create />} />
+            <Route exact path="/create" element={<Create />} />
             <Route exact path="/CreateNFT" element={<CreateNFT />} />
-            <Route exact path="/CollectionDetails" element={<CollectionDetails />} />
-            <Route eaxct path="/MyProfile" element={<MyProfile/>}/>
+            <Route
+              exact
+              path="/CollectionDetails"
+              element={<CollectionDetails />}
+            />
+            <Route eaxct path="/MyProfile" element={<MyProfile />} />
             <Route exact path="/Edit_Profile" element={<Edit_Profile />} />
             <Route exact path="/About" element={<About />} />
             <Route exact path="/Fixed_Price" element={<Fixed_Price />} />

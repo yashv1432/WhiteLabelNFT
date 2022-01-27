@@ -18,7 +18,7 @@ function MyItems() {
                     <li className="collection">
                       <img
                         className="Collection__logo"
-                        style={{ marginTop: "-24px" }}
+                        style={{ marginTop: "-20px", marginLeft: "2em" }}
                         className="img-fluid"
                         class="rounded-circle"
                         alt="100x100"
@@ -26,7 +26,7 @@ function MyItems() {
                         data-holder-rendered="true"
                       />
                     </li>
-                    <div className="text-center" style={{ marginTop: "-4em" }}>
+                    <div className="text-center" style={{ marginTop: "-2em" }}>
                       <li className="font-16 font-weight-700">{title}</li>
                       <li className="font-15 text-secondary">
                         {bottomText}:
