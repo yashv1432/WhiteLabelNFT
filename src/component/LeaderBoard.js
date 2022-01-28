@@ -188,7 +188,7 @@ function LeaderBoard() {
       <div className="sales">
 
         <div className="sales1">
-          <h1>Top NFT sales</h1>
+          <h1 className="leader1">Top NFT sales</h1>
           <div className="dropdown col">
             <button
               className="btn border dropdown-toggle"

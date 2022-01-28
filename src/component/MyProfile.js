@@ -2,7 +2,10 @@ import React, { Component } from "react";
 // import './Top_collection.css'
 import { AbstractApi } from "../API/LeaderBoardApi";
 import copy from "../asset/images/copy.PNG";
+import globe from "../asset/images/globe.PNG";
+import pencil from "../asset/images/pencil.PNG";
 import "../asset/Leader.css";
+import { Link } from "react-router-dom";
 
 export class MyProfile extends Component {
   render() {
@@ -20,17 +23,23 @@ export class MyProfile extends Component {
             alt=""
           />
           <h2>TechieArt</h2>
-          <h2 style={{ color: "grey" }}>
-            0xec71_e6ee <img style={{height :"30px"}} src={copy} alt="" />
-          </h2>
+          <h6 style={{ color: "black", display:"flex" , alignItems:"center", marginTop:"10px" }}>
+         <div style={{backgroundColor:"#f3f3f3", borderRadius:"5px"}}> 0xec71_e6ee </div>  <img style={{height :"30px"}} src={copy} alt="" />
+          </h6>
           <p style={{ marginTop: "10px", marginBottom: "0px" }}>
             Hi my name is TechieArt I am an artist based in New York my
           </p>
           <p style={{ marginBottom: "0px" }}>
             main focus in art is to make digital abstract painting
           </p>
-          <h2 style={{ color: "grey" }}>Dribbie.com</h2>
+          <h6 style={{ color: "#b1b1b1", marginTop:"12px" }}><img style={{height :"30px"}} src={globe} alt="" />Dribbie.com</h6>
         </div>
+        <div className="position-absolute absolute1">
+            Edit Profile
+        </div>
+        {/* <div className="position-absolute absolute2">
+        <img style={{height :"30px"}} src={pencil} alt="" />
+        </div> */}
 
         <div className="collectionsales MyProfilesales">
           <div>On sale</div>
@@ -38,15 +47,15 @@ export class MyProfile extends Component {
           <div>Created</div>
           <div>Liked</div>
         </div>
-        <hr />
+        <hr style={{marginLeft : "70px", width:"32rem"}}/>
 
-        <div class="row mx-0 text-center">
+        <div className="row mx-0 text-center">
           {/* <div className="col-md-3 col-lg-3 col-sm-6 col-11 images"> */}
           {AbstractApi.map((curElem) => {
             const { image, title, price, maxPrice, maxPrice2, daysLeft } =
               curElem;
             return (
-              <div className="col-md-3 col-lg-3 col-sm-6 col-11 images">
+              <div className="col-md-3 col-lg-3 col-sm-6 col-11 images" style={{marginLeft : "50px"}}>
                 <div className="container__tile">
                   <img
                     id="nft__photo"
@@ -70,7 +79,7 @@ export class MyProfile extends Component {
                         {daysLeft}{" "}
                         {/* <i class="far fa-clock" style={{ color: "#f54" }}></i> */}
                         <i
-                          class="fa-solid fa-heart"
+                          className="fa-solid fa-heart"
                           style={{ color: "#ef3643" }}
                         ></i>
                       </h6>

@@ -6,12 +6,12 @@ function Upper_MyItems() {
     <div>
       <div id="upper__myitem">
         <div className="upper__myitem">
-          <h1 className="main_upper__heading mt-5 font-weight-700 font-20">
+          <h1 className="main_upper__heading mt-4 font-weight-700 font-20">
             My Items
           </h1>
         </div>
 
-        <div className="middle__myitem mt-4">
+        <div className="middle__myitem mt-3">
           <Link
             className="item_middle__heading font-weight-700 font-16"
             to="/MyItems"

@@ -1,4 +1,5 @@
 import React from "react";
+import image from "../asset/images/icon.PNG";
 
 function Create() {
   return (
@@ -28,7 +29,7 @@ function Create() {
             style={{ cursor: "pointer" }}
           >
             <img
-              id="create_logo"
+              id="create_logo1"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/800px-MetaMask_Fox.svg.png"
               alt="..."
             />
@@ -42,12 +43,7 @@ function Create() {
           </div>
 
           <div class="card col-md-3 col-lg-3 col-sm-6 col-12 mx-4 my-5 card-border">
-            <img
-              id="create_logo"
-              src="https://tor.us/images/Wallet.svg"
-              class="card-img-top"
-              alt="..."
-            />
+            <img id="create_logo1" src={image} class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Torus</h5>
               <p class="card-text">
