@@ -46,6 +46,9 @@ ul li .rounded-circle {
 .card-group {
   width: 60%;
 }
+.card-text{
+  font-size: 14px;
+}
 
 /* .form-control {
   width: 500px;
