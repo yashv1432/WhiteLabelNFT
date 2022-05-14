@@ -1,6 +1,7 @@
 import React from "react";
 // import './Navbar.css'
 import { Link } from "react-router-dom";
+import "../asset/Notification.css";
 function Navbar() {
   return (
     <div>
@@ -12,9 +13,61 @@ function Navbar() {
               style={{ width: "40px" }}
             />
           </Link>
-          <form className="d-flex p-0 m-0 " style={{ width: "90%" }}>
+          {/* <div className="collapse navbar-collapse" id="navbarSupportedContent"> */}
+            <ul className="navbar-nav navbar-nav1">
+          <li className="mobviewnav">
+              <Link  to="/Notification">
+                     <img className="noti"
+                  src={require("../asset/images/notification.png")}
+                  style={{ color: "gray", cursor: "pointer", marginTop: "6px"}}
+                ></img></Link>
+              </li> 
+
+              <li className=" mobviewnav">
+                <Link
+                  
+                  to="/MyProfile"
+                
+                >
+                  <img  className="btnnav_mob1"
+                    src={require("../asset/images/profile.png")}
+                    style={{ color: "gray", cursor: "pointer",marginTop:"6px" }}
+                  ></img>
+                </Link>
+                
+              </li>
+              <li className="mobviewnav">
+                <Link to="/Wallet">
+                  <img className="btnnav_mob2"
+                    src={require("../asset/images/wallet.png")}
+                    style={{
+                      color: "gray",
+                      cursor: "pointer",
+                      marginTop: "6px",
+                    //  marginRight:"30px"
+                    }}
+                  ></img>
+                </Link>
+              </li>
+              </ul>
+              {/* </div> */}
+              <button
+            className=" navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <Link to="/Menu">
+            
+            <span className="navbar-toggler-icon"></span>
+            </Link>
+          </button>
+          <form className="d-flex p-0 m-0 form1">
             <input
-              className="form-control "
+              className="form-control form-controlmob "
               type="search"
               placeholder="Search"
               aria-label="Search"
@@ -26,6 +79,7 @@ function Navbar() {
               }}
             />
             <button
+            className="screachbtn"
               style={{
                 border: "0",
                 width: "35px",
@@ -37,20 +91,11 @@ function Navbar() {
               <i className="fa fa-search" aria-hidden="true"></i>
             </button>
           </form>
+         
 
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
+         
 
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <div className="collapse navbar-collapse mobcollapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item ">
                 <Link
@@ -103,19 +148,19 @@ function Navbar() {
                 <Link to="/CreateNFT">
                   <button
                     type="button"
-                    className="btn btn-primary"
+                    className="btn btn-primary btnnav "
                     style={{ padding: "5px 30px 5px 30px" }}
                   >
                     Create
                   </button>
                 </Link>
               </li>
-              <li style={{ lineHeight: "35px", color: "gray" }}>|</li>
+              <li className="removeinmob" style={{ lineHeight: "40px", color: "gray", marginLeft:"30px"}}>|</li>
               <li>
               <Link  to="/Notification">
                      <img className="noti"
                   src={require("../asset/images/notification.png")}
-                  style={{ color: "gray", cursor: "pointer", marginTop: "6px" }}
+                  style={{ color: "gray", cursor: "pointer", marginTop: "6px" ,marginLeft:"10px"}}
                 ></img></Link>
               </li>
 
@@ -128,14 +173,14 @@ function Navbar() {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <img
+                  <img  className="btnnav_mob1"
                     src={require("../asset/images/profile.png")}
                     style={{ color: "gray", cursor: "pointer" }}
                   ></img>
                 </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown" style={{marginLeft:"-3rem"}}>
                   <li>
-                    <Link className="dropdown-item" to="/Edit_Profile">
+                    <Link className="dropdown-item" to="/MyProfile">
                       Profile
                     </Link>
                   </li>
@@ -151,12 +196,13 @@ function Navbar() {
               </li>
               <li>
                 <Link to="/Create">
-                  <img
+                  <img className="btnnav_mob2"
                     src={require("../asset/images/wallet.png")}
                     style={{
                       color: "gray",
                       cursor: "pointer",
                       marginTop: "6px",
+                     marginRight:"30px"
                     }}
                   ></img>
                 </Link>

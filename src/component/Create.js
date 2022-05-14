@@ -23,13 +23,13 @@ function Create() {
             or create a new one
           </p>
         </div>
-        <div class="row">
+        <div class="row createmob">
           <div
             class="card col-md-3 col-lg-3 col-sm-6 col-12 my-5 card-border"
             style={{ cursor: "pointer" }}
           >
             <img
-              id="create_logo1"
+              id="create_logo"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/800px-MetaMask_Fox.svg.png"
               alt="..."
             />
@@ -42,8 +42,8 @@ function Create() {
             </div>
           </div>
 
-          <div class="card col-md-3 col-lg-3 col-sm-6 col-12 mx-4 my-5 card-border">
-            <img id="create_logo1" src={image} class="card-img-top" alt="..." />
+          <div class="card col-md-3 col-lg-3 col-sm-6 col-12 mx-4 my-5 card-border createmob2">
+            <img id="create_logo" src={image} class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Torus</h5>
               <p class="card-text">
@@ -69,7 +69,7 @@ function Create() {
             </div>
           </div>
         </div>
-        <button type="button" class="btn btn-outline-primary btn-size">
+        <button type="button" class="btn btn-outline-primary btn-size createmobbtn">
           Show more
         </button>
       </div>

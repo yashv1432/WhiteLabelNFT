@@ -6,10 +6,10 @@ import "../asset/Leader.css";
 export class TopSeller extends Component {
   render() {
     return (
-      <div style={{ marginLeft: "128PX", marginRight: "128px" }}>
+      <div className="topselller_mob" style={{ marginLeft: "128PX", marginRight: "128px" }}>
         {/* <h2>Hello</h2> */}
         <div className="Leader_Board_container" style={{marginBottom : "30px"}}>
-          <h1 style={{ fontSize: "20px", fontWeight: "bold" }}>Top Sellers</h1>
+          <h1 style={{ fontSize: "20px", fontWeight: "600" }}>Top Sellers</h1>
           <div className="dropdown">
             <button
               className="btn btn-secondary dropdown-toggle"
@@ -22,9 +22,13 @@ export class TopSeller extends Component {
                 backgroundColor: "white",
                 color: "black",
                 border: "1px solid #ddd",
+                display:"flex",
+                alignItems:"center",
+                justifyContent:"space-between"
               }}
             >
               Weekly
+              <i class="fas fa-caret-down"></i>
             </button>
             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               <li>
@@ -63,12 +67,9 @@ export class TopSeller extends Component {
                       className="rounded-circle"
                       src="https://earncashto.com/wp-content/uploads/2021/06/495-4952535_create-digital-profile-icon-blue-user-profile-icon.png"
                       alt="/"
-                      style={{
-                        height: "60px",
-                        width: "60px",
-                        fontSize: "16px",
-                      }}
-                    />{name}</div>
+                     
+                    /><h2> {name}</h2>
+                    </div>
             <div class="col" style={{color: "#818181" , fontWeight: "normal"}}>  <span>34 ETH</span>
                     {volume}</div>
             <div class="col">{itemssold}</div>

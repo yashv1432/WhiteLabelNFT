@@ -33,7 +33,7 @@ function Buying() {
       </nav>
       <div
         style={{ display: "flex", flexDirection: "row" }}
-        className="offset-2"
+        className="offset-2 offset-2mob"
       >
         <h4 className="font-22 font-weight-700" style={{ marginLeft: "3.6em" }}>
           Buying
@@ -60,7 +60,7 @@ function Buying() {
         </div>
       </div>
       <div className="container">
-        <div className="row">
+        <div className="row buyingmob">
           <div className="col-12 col-sm-9  offset-2">
             <div className="accordion">
               <div

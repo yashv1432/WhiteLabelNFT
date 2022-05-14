@@ -53,7 +53,7 @@ function About() {
           <div className="col-sm-4"></div>
           <div className="col-sm-4">
             <div
-              className="card"
+              className="card cardmob"
               style={{ borderRadius: "7px", width: "300px" }}
             >
               <h6 className="text-center font-14 font-weight-700 mt-2">
@@ -61,7 +61,7 @@ function About() {
                   style={{ fontSize: "35px" }}
                   className="text-primary"
                 />
-                Contact Us: nftmarketplace.com
+                Contact Us: <a href="mailto:nftmarketplace.com" style={{textDecoration:"none"}}>nftmarketplace.com</a>
               </h6>
             </div>
           </div>

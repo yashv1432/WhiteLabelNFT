@@ -15,7 +15,7 @@ function MyItems() {
               <div className="col-md-3 col-lg-3 col-sm-6 col-12">
                 <div className="myitems_container__tile">
                   <ul>
-                    <li className="collection">
+                    <li className="collection myitemmob">
                       <img
                         className="Collection__logo"
                         style={{ marginTop: "-20px", marginLeft: "2em" }}

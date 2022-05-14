@@ -1,58 +1,49 @@
-import React, { Component } from "react";
-// import './Collections_tile.css'
-import { LeaderBoardApi6 } from "../API/LeaderBoardApi";
-import { Link } from "react-router-dom";
+import React from "react";
+import { CollectionTile_Api } from "../API/CollectionTile_Api";
+import Upper__homepage from "./Upper__homepage";
+import Collection_Lower_homepage from "./Collection_Lower_homepage";
 
-export class Collections_tile extends Component {
-  render() {
-    // let { Collections_title, collection_image, no_of_items } = this.props;
-
-    return (
-      <div>
-        <div class="row">
-              {LeaderBoardApi6.map((curElem) => {
-                const { image, title, no_of_items } = curElem;
-                return (
-          <div className="col-md-3 col-lg-3 col-sm-6 col-12">
-            <div className="Collections__container">
-                  <ul style={{marginTop :"-12px"}}>
-                    <li style={{margin: "-62px 0px -62px 0px"}}>
-                 <Link to="/CollectionDetails" style={{display:"flex", justifyContent:"center"}}>
-                 
-                  <img
-                        className="Collection__logo"
-                        className="img-fluid"
-                        class="rounded-circle"
-                        alt="100x100"
-                        src={image}
-                        style={{paddingTop : "-30px"}}
-                        data-holder-rendered="true"
-                      />
-                 </Link>    
-                    </li>
-                    
-                      <li
-                        style={{
-                          fontSize: "16px",
-                          fontWeight: "bolder",
-                          marginTop: "15px",
-                        }}
-                      >
-                        {title}
-                      </li>
-                      <li style={{ fontSize: "16px", fontWeight: "normal" }}>
-                        Total Items:<span>{no_of_items}</span>{" "}
-                      </li>
-                
-                  </ul>
-            </div>
-          </div>
-                );
-              })}
+function Collections_tile() {
+  return (
+    <>
+      <div className="container">
+        <Upper__homepage />
+        <Collection_Lower_homepage />
+        <div className="row mob_row" style={{justifyContent:"space-between"}}>
+          {CollectionTile_Api.map((curElem) => {
+            const { id, image, title, number } = curElem;
+            return (
+              <div className="col-md-6 col-lg-3 col-sm-12 mt-5">
+                <div
+                  className="card nft-card-radius collection-card border-radius pt-4 cardmob"
+                  style={{ marginLeft: "1em", backgroundColor: "#F8F8F8" }}
+                >
+                  <div className="text-center">
+                    <img
+                      className="img-fluid border-radius collection-img-card-radius collection_imgmob"
+                      src={image}
+                      style={{ width: "100px", height: "100px" }}
+                    />
+                  </div>
+                  <div className="text-center pt-3">
+                    <h6 className="value__high font-16 text-center font-weight-900">
+                      {title}
+                    </h6>
+                    <p>
+                      <span className="font-14 text-dark">
+                        Total Items:
+                        <span className="text-primary">{number}</span>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
-    );
-  }
+    </>
+  );
 }
 
 export default Collections_tile;

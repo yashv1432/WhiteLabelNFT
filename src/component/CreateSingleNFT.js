@@ -19,15 +19,17 @@ function CreateSingleNFT(Single) {
 
   return (
     <div>
-      <div className="row mt-5">
+        <div className="text-center mt-5">
+            <h4 className="create-nft-font">Create NFT</h4>
+          </div>
+      <div className="row create_singlemob">
         <div
-          className="col-sm-3 col-12 col-xs-12 offset-sm-2"
-          style={{ marginTop: "5.5em" }}
+          className="col-sm-3 col-12 col-xs-12 createnft_mob"
         >
           <label for="email" className="form-label">
             Upload File*
           </label>
-          <div className="card single-nft-card mt-4 p-5">
+          <div className="card single-nft-card p-5">
             <Button
               onClick={handleClick}
               style={{ border: "none", backgroundColor: "#fff" }}
@@ -58,9 +60,7 @@ function CreateSingleNFT(Single) {
           </span>
         </div>
         <div className="col-sm-5 col-12 col-xs-12">
-          <div className="text-center">
-            <h4 className="create-nft-font">Create NFT</h4>
-          </div>
+        
           <div className="singlenft-form-box">
             <form className="suggestion-form  p-4 ">
               <div className="mb-3 mt-3">
@@ -88,6 +88,7 @@ function CreateSingleNFT(Single) {
                   Collection
                   <Link
                     to="/CreateNFT"
+                    className=" createbtn"
                     style={{
                       textDecoration: "none",
                       marginLeft: "23em",

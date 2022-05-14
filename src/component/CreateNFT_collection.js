@@ -23,7 +23,7 @@ function CreateNFT_collection(Collection) {
         <div className="top-heading">
           <h4 className="create-nft-font">Create your collection</h4>
         </div>
-        <div style={{ marginLeft: "38px" }}>
+        <div className="create-nft-font1">
           <label for="email" className="form-label mt-3">
             Upload File*
           </label>
@@ -57,11 +57,11 @@ function CreateNFT_collection(Collection) {
             </span>
           </div>
         </div>
-        <div style={{ marginLeft: "38px" }}>
+        <div className="create-nft-font1">
           <label for="email" className="form-label mt-3">
             Upload Banner*
           </label>
-          <div className="card banner-nft-card p-5">
+          <div className="card banner-nft-card p-5 bannermob">
             <Button
               onClick={handleClick}
               style={{ border: "none", backgroundColor: "#fff" }}

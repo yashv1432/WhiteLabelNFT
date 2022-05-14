@@ -2,19 +2,26 @@ import React, { Component } from "react";
 // import './Top_collection.css'
 import { LeaderBoardApi4 } from "../API/LeaderBoardApi";
 import "../asset/Leader.css";
+import {useEffect} from 'react';
 
-export class TopBidders extends Component {
-  render() {
+function TopBidders() {
+
+  useEffect(()=>{
+fetch('http://whitelabel-nft-lb-dev-1838936337.us-east-1.elb.amazonaws.com:3002/top-bidders')
+.then(response => response.json())
+.then(data => console.log(data));
+  },[]);
+  
     return (
-      <div style={{ marginLeft: "128PX", marginRight: "128px" }}>
+      <div className="topbidders_mob" style={{ marginLeft: "128PX", marginRight: "128px" }}>
         {/* <h2>Hello</h2> */}
         <div className="Leader_Board_container" style={{marginBottom : "30px"}}>
-          <h1 style={{ fontSize: "20px", fontWeight: "bold" }}>Top Buyers</h1>
+          <h1 style={{ fontSize: "20px", fontWeight: "600" }}>Top Buyers</h1>
           <div className="dropdown">
             <button
               className="btn btn-secondary dropdown-toggle"
               type="button"
-              id="dropdownMenuButton1"
+              id="dropdownMenuButton1" 
               data-bs-toggle="dropdown"
               aria-expanded="false"
               placeholder="All"
@@ -22,9 +29,13 @@ export class TopBidders extends Component {
                 backgroundColor: "white",
                 color: "black",
                 border: "1px solid #ddd",
+                display:"flex",
+                alignItems:"center",
+                justifyContent:"space-between"
               }}
             >
               Weekly
+              <i class="fas fa-caret-down"></i>
             </button>
             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               <li>
@@ -63,12 +74,10 @@ export class TopBidders extends Component {
                       className="rounded-circle"
                       src="https://earncashto.com/wp-content/uploads/2021/06/495-4952535_create-digital-profile-icon-blue-user-profile-icon.png"
                       alt="/"
-                      style={{
-                        height: "60px",
-                        width: "60px",
-                        fontSize: "16px",
-                      }}
-                    />{name}</div>
+                     
+                    />
+                    <h2>
+                    {name}  </h2></div>
             <div class="col" style={{color: "#818181" , fontWeight: "normal"}}>  <span>34 ETH</span>
                     {volume}</div>
             <div class="col">{itemsbought}</div>
@@ -79,6 +88,6 @@ export class TopBidders extends Component {
       </div>
     );
   }
-}
+
 
 export default TopBidders;

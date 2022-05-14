@@ -35,7 +35,7 @@ export class MyProfile extends Component {
           <h6 style={{ color: "#b1b1b1", marginTop:"12px" }}><img style={{height :"30px"}} src={globe} alt="" />Dribbie.com</h6>
         </div>
         <div className="position-absolute absolute1">
-            Edit Profile
+        <Link to="/Edit_Profile" style={{textDecoration:"none"}}> Edit Profile</Link>   
         </div>
         {/* <div className="position-absolute absolute2">
         <img style={{height :"30px"}} src={pencil} alt="" />
@@ -47,19 +47,19 @@ export class MyProfile extends Component {
           <div>Created</div>
           <div>Liked</div>
         </div>
-        <hr style={{marginLeft : "70px", width:"32rem"}}/>
+        <hr/>
 
-        <div className="row mx-0 text-center">
+        <div className="row mx-0 text-center image1">
           {/* <div className="col-md-3 col-lg-3 col-sm-6 col-11 images"> */}
           {AbstractApi.map((curElem) => {
             const { image, title, price, maxPrice, maxPrice2, daysLeft } =
               curElem;
             return (
-              <div className="col-md-3 col-lg-3 col-sm-6 col-11 images" style={{marginLeft : "50px"}}>
+              <div className="col-md-3 col-lg-3 col-sm-6 col-11 images">
                 <div className="container__tile">
                   <img
                     id="nft__photo"
-                    style={{ width: "312px" }}
+                  
                     className="img-fluid"
                     src={image}
                     alt="/"
